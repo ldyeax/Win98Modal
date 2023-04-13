@@ -412,5 +412,7 @@ export default class Win98Modal {
 		this.#resizable = args.resizable;
 
 		this.refresh();
+
+		this.focus();
 	}
 }
