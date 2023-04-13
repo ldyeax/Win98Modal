@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<title>Windows 98 Modals</title>
+<script type=module>
+import Win98Modal from './Win98Modal.js';
+
+let w = window.innerWidth;
+let h = window.innerHeight;
+
+new Win98Modal({
+	title: "Please send me $ 20 Dollat",
+	type: "image",
+	contents: "examples/pippadvice.gif",
+	width: 564,
+	height: 332,
+	icon: "examples/dollarspindownd.gif",
+	x: w/6,
+	y: 0,
+	resizable: false,
+	href: "https://twitter.com/keryot/status/1614051474795008005"
+});
+
+new Win98Modal({
+	title: "Work From Home",
+	type: "html",
+	contents: `
+	<div style="background-color: white; margin: 0; padding: 0; text-align: center;">
+		<h1 style="color: blue; margin-top: 0;" background-color: white;>Google Pays Me $173 An Hour</h1>
+		<img src="examples/wfh.png" width=274 height=171> <br>
+		Google has blessed me with a $5000 a month at home job <a style="font-size: 24px;" href="https://github.com/AppleDash/rockstar" target="_blank"> &gt; &gt; See How</a>
+	</div>
+	`,
+	width: 274,
+	icon: "examples/winupd.ico"
+})
+
+new Win98Modal({
+	title: "horny🐎horsie",
+	type: "image",
+	contents: "examples/myhornissobig.png",
+	width: 640,
+	height: 640,
+	icon: "examples/twibooru.ico",
+	x: w - 640,
+	y: h - 640,
+	resizable: false,
+	href: "https://www.twibooru.org/",
+	imageWidth: 640,
+	imageHeight: 640,
+	iconPixelated: false
+});
+
+new Win98Modal({
+	title: "My Husband Is Dead - Apply Online Today",
+	type: "iframe",
+	contents: "examples/myhusbandisdead.html",
+	width: 640,
+	height: 480,
+	icon: "examples/gem.gif",
+	x: w/4,
+	y: h/6,
+	resizable: true
+});
+
+new Win98Modal({
+	title: "Velvety Smooth Skin!",
+	type: "iframe",
+	contents: "examples/dermatologists.html",
+	width: 350,
+	height: 600,
+	icon: "examples/tv.ico",
+	x: 24,
+	y: h-600,
+	resizable: true
+});
+
+new Win98Modal({
+	title: "find out how this ugly son of a bitch managed to fuck your dad",
+	type: "iframe",
+	contents: "examples/uglysonofabitch.html",
+	width: 220,
+	height: 323,
+	icon: "examples/ff.webp",
+	x: w-220,
+	y: 0
+});
+
+</script>
+<style>
+body {
+	background-image: url("clouds.bmp");
+	background-size: cover;
+}
+</style>
+<body>
+<h1>Windows 98 Modal Examples</h1>
